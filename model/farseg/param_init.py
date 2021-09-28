@@ -1,0 +1,21 @@
+import paddle.nn as nn
+
+
+def constant_init(param, **kwargs):
+    initializer = nn.initializer.Constant(**kwargs)
+    initializer(param, param.block)
+
+
+def normal_init(param, **kwargs):
+    initializer = nn.initializer.Normal(**kwargs)
+    initializer(param, param.block)
+
+
+def kaiming_normal_init(param, **kwargs):
+    initializer = nn.initializer.KaimingNormal(**kwargs)
+    initializer(param, param.block)
+
+
+def kaiming_uniform_init(param, **kwargs):
+    initializer = nn.initializer.KaimingUniform(**kwargs)
+    initializer(param, param.block)
