@@ -1,5 +1,5 @@
 # FarSeg_Paddle
-FarSeg的Paddle复现
+FarSeg的Paddle复现，官方实现参考[这里](https://github.com/Z-Zheng/FarSeg)。
 
 ## 前向对齐
 
